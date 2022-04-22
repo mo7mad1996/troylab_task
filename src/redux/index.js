@@ -37,6 +37,11 @@ const reducer = (state = initalState, action) => {
     case 'ACCEPT':
       return {...state, is_sold: true}
     
+    case 'REMOVE ITEM':
+      return {
+        ...state, 
+        data: state.data.filter((el, n) => n !== action.payload)
+      }
 
     default: 
       return state
