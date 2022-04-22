@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+:root {
+  --main-color: #13A69A;
+  --gray: #818181
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zen Kaku Gothic Antique',
+  sans-serif;
+}
+
+.app {
+  direction: rtl;
+  height: 100vh;
+}
+
+.app .row {
+  display: flex;
+}

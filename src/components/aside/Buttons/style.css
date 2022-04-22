@@ -1,0 +1,20 @@
+.buttons {
+  gap: 10px;
+  display: flex;
+}
+.buttons .btn{
+  flex: 1;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  filter: blur(50%);
+}
+.buttons .btn.Accept{
+  background: var(--main-color);
+}
+.buttons .btn.reject{
+  background-color: #EC2424;
+}

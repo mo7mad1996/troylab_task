@@ -1,0 +1,97 @@
+:root {
+  --ligth: #13A69A;
+  --dark: #245550;
+  --white: #E8F8F7;
+}
+
+/* base classes */
+.bold {
+  font-weight: bold;
+}
+.text-color {
+  color: var(--ligth);
+}
+
+.Order {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* header */
+.Order .order-header {
+  background-image: linear-gradient(to Top, var(--ligth), var(--dark));
+  padding: 10px;
+  display: flex;
+  margin: 0 !important;
+  color: white;
+}
+.Order .order-header .img {
+  height: 50px;
+}
+.Order .order-header .info {
+  flex: 1;
+}
+.Order .order-header .close {
+  cursor: pointer;
+}
+
+/* items */
+.Order-items {
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.single_order_item {
+  display: flex;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px 10px 5px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.single_order_item .img {
+  height: 50px;
+}
+.single_order_item .center {
+  flex: 1;
+}
+.single_order_item .left {
+  text-align: left;
+}
+.single_order_item .left .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* FinalDetails */
+.last_order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.FinalDetails {
+  background-color: var(--white);
+  align-self: baseline;
+  padding: 10px 10px 100px;
+  margin: -10px;
+}
+.FinalDetails input{
+  background: none;
+  border: none;
+  text-align: left;
+}
+.FinalDetails .btn {
+  padding: 20px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark);
+  color: white;
+  font-size: 1.3em;
+  margin: 10px 0;
+}

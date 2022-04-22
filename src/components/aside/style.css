@@ -1,0 +1,169 @@
+:root{ 
+  --yellow: #FFAA00;
+  --main-color: #68c7c0;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+.text-yellow {
+  color: var(--yellow)
+}
+
+.app .row .aside {
+  background-color: var(--main-color);
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  min-width: 295px;
+  height: 100vh;
+
+  /* align-self: stretch; */
+}
+
+.app .row .aside header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.app .row .aside header form {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.app .row .aside header form input {
+  width: 150px;
+}
+.app .row .aside header form input ,
+.app .row .aside header form button {
+  border: none;
+  background: none;
+  font-size: 1.3em;
+  outline: none;
+  height: 100%;
+}
+.app .row .aside header button:focus {
+  outline: 2px solid blue;
+}
+.app .row .aside header > button {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 5px ;
+}
+.app .row .aside header>button.blue {
+  background-color: #53BAFF;
+}
+.app .row .aside header>button.yellow {
+  background-color: var(--yellow);
+}
+
+/* no-items */
+.app .row .aside .no-items {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: var(--main-color);
+  justify-content: center ;
+}
+
+/* items */
+.app .row .aside .items  {
+  background-color: #E8F8F7;
+  height: 100%;
+  padding: 10px;
+  margin: 0 -10px;
+}
+.app .row .aside .items .items-menu {
+  height: 50vh;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.app .row .aside .items .items-menu::-webkit-scrollbar {
+  display: none;
+}
+
+
+.app .row .aside .items .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.app .row .aside .items .item-header button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.app .row .aside .items .item-header button.yellow {
+  background-color: var(--yellow);
+}
+
+.app .row .aside .items .single-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+.app .row .aside .items .single-item img {
+  height: 50px ;
+  width: 50px ;
+  object-fit: contain;
+}
+.app .row .aside .items .single-item .item-details {
+  flex: 1;
+}
+.app .row .aside .items .single-item  input {
+  width: 70px;
+  padding: 5px 10px;
+  display: block;
+  text-align: center;
+  appearance: none;
+  border-radius: 5px;
+  color: var(--main-color);
+  border: 1px solid var(--gray);
+  font-weight: 800;
+}
+.single-item .changed {
+  position: relative;
+}
+.single-item .changed::after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: -5px; right: -5px;
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+
+.app .row .aside .items .single-item .item-details .text-yellow {
+  line-height: .7;
+}
+
+.Details .flex{
+  padding: 0 10px 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Details .flex:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #C6E6E4;
+  inset: 0;
+  top: auto;
+}

@@ -1,0 +1,39 @@
+.app .footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+
+.app .footer .nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.app .footer .nav a {
+  padding: 5px;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: var(--gray);
+}
+.app .footer .nav a span {
+  display: block;
+}
+
+.app .footer .nav a.active {
+  color: var(--main-color);
+}
+
+.app .footer .nav a.active::before {
+  content: '';
+  background-color: var(--main-color);
+  position:absolute;
+  height: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
