@@ -75,12 +75,12 @@ const List = () => {
 const Cards = props => {
   let [items, setItems] = React.useState([])
 
-
   // fetch the data 
-  React.useEffect(() => {
-    fetch('/data.json').then(res => res.json()).then(data => setItems(data))
-  }, []);
-
+  React.useEffect(() => 
+    fetch('/data.json')
+      .then(res => res.json())
+      .then(data => setItems(data))
+  , []);
 
   return items.map(item => <Card item={item} add={props.add} key={Math.random()} />)
 }
@@ -95,6 +95,7 @@ const Card = ({item, add}) =>{
   return <div className="card" key={Math.random()}>
     <div className="card-info">
       <span>
+        {/* Run is an icon */}
         <Run />
         {item.calories} Kcal
       </span>
@@ -102,6 +103,7 @@ const Card = ({item, add}) =>{
     </div>
 
     <div className="card-image"><img src={item.image} alt={item.name} /> </div>
+    
     <div className="item-info">
       <div>{item.name}</div>
       <div>الكميه بالمخزون: <span>{item.count}</span></div>
@@ -114,9 +116,9 @@ const Card = ({item, add}) =>{
 }
 
 /**
- * =========
- * = Redux =
- * =========
+ * ===================
+ * ==     Redux     ==
+ * ===================
  */
 const mapDispatchToProps = (dispatch) => {
   return {

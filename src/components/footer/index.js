@@ -1,19 +1,12 @@
 import React from "react"
 import './style.css'
 
-// nav Images
-import  { Home, Wallet, Sales, More } from './NavImages'
+// nav Icons
+import  { Home, Wallet, Sales, More } from './navIcons'
 
-const Footer = () => (
-  <footer className="footer">
-    <Nav />
-  </footer>
-)
+const Footer = () => <footer className="footer"><Nav /></footer>
 
-const Nav = () => {
-
-  return(    
-    <nav className="nav">
+const Nav = () => <nav className="nav">
       <a href="#" className="active">
         <Home />
         <span> الرئيسيه</span>
@@ -31,7 +24,5 @@ const Nav = () => {
         <span>المزيد</span>
       </a>
     </nav>
-  )
-}
 
 export default Footer

@@ -47,7 +47,6 @@ const reducer = (state = initalState, action) => {
       return state
   }
 
-
 }
 
 // Store

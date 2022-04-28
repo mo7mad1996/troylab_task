@@ -3,17 +3,16 @@ import React from "react";
 import {Provider} from 'react-redux'
 import {store} from './redux'
 
-// pages
+// components
 import Main from './components/main'
 import Aside from './components/aside'
 import Footer from './components/footer'
 
 
-// const store = React
-
 const App = () => {
   return(
     <Provider store={store} >
+      {/* layout */}
       <div className="app">
         <div className="row">
           <Main />

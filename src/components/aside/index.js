@@ -51,9 +51,9 @@ const Aside = props => {
               <div className="item-header">
                 <h4>ملخض الطلبات الوارده</h4>
                 {
-                  inEdit? 
-                  <button onClick={edit}>حفظ</button>:
-                  <button onClick={edit} className='yellow'><Edit /> تعديل</button>
+                  inEdit ? 
+                    <button onClick={edit}>حفظ</button> :
+                    <button onClick={edit} className='yellow'><Edit /> تعديل</button>
                 }
               </div>
               <Items inEdit={inEdit} />
@@ -76,5 +76,6 @@ const NoItems = _ => <div className="no-items">
 </div>
 
 
+// -----------< Redux >-----------
 const mapStateTOProps = state => state
 export default connect(mapStateTOProps)(Aside)

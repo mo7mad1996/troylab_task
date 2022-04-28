@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 const FinalDetails = props => {
-  let [Notes, editNotes] = React.useState('يفضل تاريخ صلاحيه حديث')
+  let [Notes, editNotes] = React.useState('يفضل تاريخ صلاحيه حديث!!')
 
   return <div className='FinalDetails Details'>
     <div className='flex'>
@@ -21,6 +21,8 @@ const FinalDetails = props => {
     <button className='btn'>شراء</button>
   </div>
 }
+
+// -----------< Redux >-----------
 const stateToProps = state => state
 
 export default connect(stateToProps)(FinalDetails)
